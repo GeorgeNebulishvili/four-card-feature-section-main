@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fafafa;
+  --text:       #4d4f62;
+  --teambuilder: #EA5454;
+  --supervisor: #44D3D2;
+  --karma: #FCAE4A;
+  --calculator: #549EF2;
+
+}
+
+body {
+  width: calc (100vw-64px);
+  min-height: 100vh;
+  background-color: var(--background);
+  font-family: "Poppins", sans-serif;
+  padding: 85px 32px 78px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 275;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  color: var(--text);
+  
+}
+.title{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  color: var(--text);
+}
+.about {
+  font-size: 15px;
+  font-weight: 275;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  color: var(--text);
+  opacity: 0.5;
+  margin-top: 16px;
+}
+
+#supervisor {
+  margin-top: 78px;
+}
+#teambuilder {
+  background-color: var(--teambuilder);
+}
+#karma {
+  background-color: var(--karma);
+}
+#calculator {
+  background-color: var(--calculator);
+  
+}
+.calculator {
+  margin-bottom: 78px;
+}
+.card {
+  width: 100%;
+  background: var(--background);
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+.content {
+  padding: 0 28px 28px;
+  margin-top: 27px;
+
+}
+.border {
+  width: 100%;
+  height: 3.55px;
+  background-color: var(--supervisor);
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
+}
+
+.card-title{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text);
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: var(--text);
+  opacity: 0.5;
+}
+
+.icon {
+  height: 57px;
+  width: 57px;
+  margin-top: 33px ;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 350px;
+  }
+  .about {
+    width: 540px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .description, .title { 
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.25px;
+  }
+  .card-section {
+    margin-top: 68px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .about {
+    width: 540px;
+  }
+  .calculator {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  #supervisor {
+    margin-top: 0;
+  }
+  .middle-cards {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* .card-header {
+    margin-bottom: 68px;
+  } */
+}
+
